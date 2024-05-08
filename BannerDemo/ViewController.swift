@@ -43,6 +43,8 @@ extension ViewController: UIScrollViewDelegate {
         let totalPages = images.count
 
         // 圖片        [ (3) (1) (2) (3) (1) ]
+        // totalPages [      0   1   2      ] (array)
+        // totalPages [      1   2   3      ] (.count)
         // currentPage[  1   2   3   4   5  ]
         
         if currentPage == 0 {
