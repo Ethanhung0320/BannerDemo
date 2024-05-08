@@ -45,7 +45,8 @@ extension ViewController: UIScrollViewDelegate {
         // 圖片        [ (3) (1) (2) (3) (1) ]
         // totalPages [      0   1   2      ] (array)
         // totalPages [      1   2   3      ] (.count)
-        // currentPage[  1   2   3   4   5  ]
+        // currentPage[  0   1   2   3   4  ] (array)
+        // currentPage[  1   2   3   4   5  ] (.count)
         
         if currentPage == 0 {
             // 最前面的額外圖片（3），跳轉到實際的最後一張圖片（3）
@@ -54,7 +55,6 @@ extension ViewController: UIScrollViewDelegate {
             // 最後面的額外圖片（1），跳轉到實際的第一張圖片（1）
             bannerScrollView.contentOffset = CGPoint(x: width, y: 0)
         }
-        
     }
     func startTimer() {
         // 創建一個重複執行的計時器，每隔 3 秒觸發一次
