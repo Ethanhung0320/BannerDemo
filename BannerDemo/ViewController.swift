@@ -36,8 +36,6 @@ extension ViewController: UIScrollViewDelegate {
         bannerScrollView.contentOffset = CGPoint(x: width, y: 0)
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        bannerScrollView.delegate = self
-        
         let width = bannerScrollView.bounds.width
         let currentPage = Int(bannerScrollView.contentOffset.x / width)
         let totalPages = images.count
