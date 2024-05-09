@@ -51,7 +51,7 @@
                                 </subviews>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                        <size key="value" width="1980" height="0.0"/>
+                                        <size key="value" width="2050" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
